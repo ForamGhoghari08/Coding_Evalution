@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-section">
+            <form id="employee-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required><br>
+
+                <label for="job-role">Job Role:</label>
+                <select id="job-role" required>
+                    <option value="Manager">Manager</option>
+                    <option value="Developer">Developer</option>
+                    <option value="Designer">Designer</option>
+                </select><br>
+
+                <label for="department">Department:</label>
+                <select id="department" required>
+                    <option value="HR">HR</option>
+                    <option value="IT">IT</option>
+                    <option value="Finance">Finance</option>
+                </select><br>
+
+                <label for="salary">Salary:</label>
+                <input type="number" id="salary" required><br>
+
+                <label for="email">Contact Email:</label>
+                <input type="email" id="email" required><br>
+
+                <label for="experience">Work Experience:</label>
+                <input type="number" id="experience" required><br>
+
+                <button type="submit">Hire</button>
+            </form>
+        </div>
+
+        <div class="table-section">
+            <table id="employee-table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Job Role</th>
+                        <th>Department</th>
+                        <th>Salary</th>
+                        <th>Contact Email</th>
+                        <th>Work Experience</th>
+                        <th>Role Type</th>
+                        <th>Fire Employee</th>
+                    </tr>
+                </thead>
+                <tbody id="employee-list"></tbody>
+            </table>
+        </div>
+<br>
+        <div class="count-section">
+            <p>Total Active Employees: <span id="total-employees">0</span></p><br>
+            <p>Total Salary: $<span id="total-salary">0.00</span></p> <br>
+            <button id="deleteAll">Fire All Employees</button><br>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
